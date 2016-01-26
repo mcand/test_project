@@ -26,8 +26,8 @@ gem 'rack-ssl-enforcer'
 gem 'whenever', :require => false
 
 #GEM's para criação e exportação para EXCEL (XSL)
-# gem 'spreadsheet', :git => 'git://github.com/zdavatz/spreadsheet.git'
-# gem 'to_xls', :git => "git://github.com/splendeo/to_xls.git"
+gem 'spreadsheet', :git => 'git://github.com/zdavatz/spreadsheet.git'
+gem 'to_xls', :git => "git://github.com/splendeo/to_xls.git"
 #
 
 #SEO
@@ -50,4 +50,31 @@ end
 gem 'jquery-rails'
 gem 'haml'
 gem 'haml-rails'
+gem 'excon' #dependencia fog
+gem 'fog' #dependencia engines
+gem 'aasm'
+gem 'pismo' #metadata de págninas(títulos, etc.)
+gem 'simple_form'
+gem 'mustache' #logic-less templates
+gem 'poirot' #mustache no servidor e no cliente
+gem 'paper_trail' #versionamento dos registros importantes
+gem 'brazilian-rails' #recursos úteis para desenvolvedores brasileiros.
 
+group :test do
+  gem 'database_cleaner'
+  gem 'shoulda-matchers'
+  gem 'spork'
+  gem 'guard-spork'
+  gem 'guard-rspec'
+  gem 'simplecov'
+  gem 'rb-fsevent', '~> 0.9.1'
+end
+
+group :development, :staging, :test do
+  gem 'rspec-rails'
+  gem 'factory_girl_rails'
+  gem 'factory_girl-preload'
+  gem 'faker'
+  gem 'debugger'
+  gem 'ruby-debug-passenger'
+end
