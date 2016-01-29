@@ -27,7 +27,7 @@ gem 'whenever', :require => false
 
 #GEM's para criação e exportação para EXCEL (XSL)
 gem 'spreadsheet', :git => 'git://github.com/zdavatz/spreadsheet.git'
-gem 'to_xls', :git => "git://github.com/splendeo/to_xls.git"
+gem 'to_xls'
 #
 
 #SEO

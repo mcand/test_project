@@ -9,13 +9,6 @@ GIT
       nokogiri (>= 1.4.3, < 1.6)
 
 GIT
-  remote: git://github.com/splendeo/to_xls.git
-  revision: d528f6318f87afc8ff499c43e15acd3afa2565eb
-  specs:
-    to_xls (1.5.2)
-      spreadsheet
-
-GIT
   remote: git://github.com/zdavatz/spreadsheet.git
   revision: c404e7950c2bb6da567afb37d821d00a19fc359f
   specs:
@@ -191,7 +184,7 @@ GEM
     jwt (0.1.8)
       multi_json (>= 1.5)
     letsrate (1.0.8)
-    libv8 (3.11.8.17)
+    libv8 (3.16.14.13)
     listen (1.0.3)
       rb-fsevent (>= 0.9.3)
       rb-inotify (>= 0.9)
@@ -230,7 +223,7 @@ GEM
     paper_trail (2.7.1)
       activerecord (~> 3.0)
       railties (~> 3.0)
-    pg (0.15.1)
+    pg (0.18.4)
     pismo (0.7.4)
       awesome_print
       chronic
@@ -276,7 +269,7 @@ GEM
       ffi (>= 0.5.0)
     rdoc (3.12.2)
       json (~> 1.4)
-    ref (1.0.4)
+    ref (2.0.0)
     rest-client (1.6.7)
       mime-types (>= 1.16)
     rmagick (2.13.2)
@@ -321,8 +314,8 @@ GEM
       multi_json (~> 1.0)
       rack (~> 1.0)
       tilt (~> 1.1, != 1.3.0)
-    therubyracer (0.11.4)
-      libv8 (~> 3.11.8.12)
+    therubyracer (0.12.2)
+      libv8 (~> 3.16.14.0)
       ref
     thor (0.18.1)
     tilt (1.4.1)
@@ -334,6 +327,8 @@ GEM
       multi_json (~> 1.3)
       rake
       rest-client (~> 1.6)
+    to_xls (1.5.3)
+      spreadsheet
     treetop (1.4.12)
       polyglot
       polyglot (>= 0.3.1)
@@ -401,7 +396,10 @@ DEPENDENCIES
   spreadsheet!
   therubyracer
   tire
-  to_xls!
+  to_xls
   uglifier (>= 1.0.3)
   whenever
   will_paginate
+
+BUNDLED WITH
+   1.11.2
